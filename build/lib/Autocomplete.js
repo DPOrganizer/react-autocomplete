@@ -324,7 +324,7 @@ var Autocomplete = React.createClass({
 
   handleInputClick: function handleInputClick() {
     // Input will not be focused if it's disabled
-    if (this.isInputFocused() && this.state.isOpen === false) this.setState({ isOpen: true });else if (this.state.highlightedIndex !== null && !this._ignoreClick) this.selectItemFromMouse(this.getFilteredItems()[this.state.highlightedIndex]);
+    if (this.isInputFocused() && this.state.isOpen === false) this.setState({ isOpen: true });
     this._ignoreClick = false;
   },
 
